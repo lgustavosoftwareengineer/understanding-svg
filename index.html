@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treinando SVG</title>
+  </head>
+  <body>
+    <h1>Comandos de linha</h1>
+    <svg width="200" height="200">
+      <path
+        d="m 10 10, h 80, v 80, h -80, Z"
+        fill="transparent"
+        stroke="#000"
+      />
+
+      <path d="M 100 10, H 190, V 90, H 100, L 100 10" />
+
+      <circle cx="10" cy="10" r="2" fill="red" />
+      <circle cx="90" cy="90" r="2" fill="red" />
+      <circle cx="10" cy="90" r="2" fill="red" />
+      <circle cx="90" cy="10" r="2" fill="red" />
+    </svg>
+
+    <h1>Comandos de linhas curvilíneas</h1>
+    <h2>Utilizando o comando C</h2>
+    <svg width="500" height="200">
+      <path
+        d="M 10 10 C 20 20, 40 20, 50 10"
+        stroke="black"
+        fill="transparent"
+      />
+      <path
+        d="M 70 10 C 70 20, 110 20, 110 10"
+        stroke="red"
+        fill="transparent"
+      />
+      <path
+        d="M 130 10 C 120 20, 180 20, 170 10"
+        stroke="blue"
+        fill="transparent"
+      />
+      <path
+        d="M 10 60 C 20 80, 40 80, 50 60"
+        stroke="purple"
+        fill="transparent"
+      />
+      <path
+        d="M 70 60 C 70 80, 110 80, 110 60"
+        stroke="green"
+        fill="transparent"
+      />
+      <path
+        d="M 130 60 C 120 80, 180 80, 170 60"
+        stroke="orange"
+        fill="transparent"
+      />
+      <path
+        d="M 10 110 C 20 140, 40 140, 50 110"
+        stroke="black"
+        fill="transparent"
+      />
+      <path
+        d="M 70 110 C 70 140, 110 140, 110 110"
+        stroke="black"
+        fill="transparent"
+      />
+      <path
+        d="M 130 110 C 120 140, 180 140, 170 110"
+        stroke="black"
+        fill="transparent"
+      />
+      <path
+        d="M 200 110, C 200 140, 300 140, 300 110"
+        stroke="black"
+        fill="transparent"
+      />
+    </svg>
+    <h2>Utilizando o comando S</h2>
+    <svg width="500" height="200">
+      <path
+        d="
+          M 10 80, 
+          C 40 10, 60 10, 90 80, 
+          S 160 150, 180 80, 
+          S 220 10, 260 80
+        "
+        fill="transparent"
+        stroke="black"
+      />
+    </svg>
+    <h2>Utilizando o comando Q</h2>
+    <svg width="500" height="200">
+      <path
+        d="
+          M 10 80, 
+          Q 95 0, 190 80
+        "
+        fill="transparent"
+        stroke="black"
+      />
+    </svg>
+    <h2>Utilizando o comando T</h2>
+    <svg width="1000" height="200">
+      <path
+        d="
+          M 10 80, 
+          Q 60 10, 120 80
+          T 240 80
+          T 360 80
+        "
+        fill="transparent"
+        stroke="black"
+      />
+    </svg>
+    <h2>Criando uma desenho e adicionando gradiente no desenho</h2>
+    <svg width="1000" height="400">
+      <defs>
+        <linearGradient id="my-gradiente" gradientTransform="rotate(120)">
+          <stop offset="5%" stop-color="#00ffd0" />
+          <stop offset="95%" stop-color="#509487" />
+        </linearGradient>
+      </defs>
+
+      <path
+        d="
+          M 0 0,
+          H 480,
+          V 150, 
+          C 320 300, 50 220 0 150,
+          Z 
+        "
+        fill="#000"
+      />
+    </svg>
+    <h2>Criando uma desenho</h2>
+    <svg width="200" height="200">
+      <path
+        d="
+          M 10 80
+          C 20 10, 80 10, 100 80
+          S 160 160, 200 80
+        "
+        fill="transparent"
+        stroke="red"
+      />
+    </svg>
+  </body>
+</html>
